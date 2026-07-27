@@ -1,0 +1,12 @@
+4010 // Addr 0 loada
+5011 // Addr 1  load b
+2000 // Addr 2   sub
+F008  //if negflag is 1 jump to 8
+5010           //load b
+8009
+6000
+700B
+4011
+8008
+6005
+xxxx

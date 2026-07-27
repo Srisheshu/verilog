@@ -1,0 +1,43 @@
+// Code your design here
+module alu (
+    input  [15:0] A,          
+    input  [15:0] B,          
+    input  [3:0]  opcode, 
+    input  mode,
+  output reg [15:0] ALU_out,
+  output neg_flag
+);
+
+  assign neg_flag = ALU_out[15];
+  
+    always @(*) begin
+       
+        ALU_out = 16'b0;
+
+      if (mode == 1'b1) begin
+      
+        case (opcode)
+        
+            4'b0000: ALU_out = A + B;       
+            4'b0001: ALU_out = A * B;         
+            4'b0010: ALU_out = A - B;      
+            4'b0011: ALU_out = (B != 0) ? (A / B) : 16'b0; 
+
+            4'b1000: ALU_out = A & B;          // bitwise AND
+            4'b1001: ALU_out = A | B;          // OR
+            4'b1010: ALU_out = ~(A & B);       // NAND
+            4'b1011: ALU_out = ~(A | B);       // NOR
+            4'b1100: ALU_out = ~A;             // NOT A
+            4'b1101: ALU_out = ~B;             // NOT B
+            4'b1110: ALU_out = A ^ B;          // XOR
+            4'b1111: ALU_out = A - B;
+//             4'b1111: ALU_out = ~(A ^ B);       // XNOR
+
+//             default: ALU_out = 16'b0; 
+          
+        endcase
+        
+      end
+    end
+
+endmodule

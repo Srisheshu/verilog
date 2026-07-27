@@ -1,0 +1,24 @@
+module program_counter (
+    input clk,                
+    input reset,              
+    input load_pc,            
+    input inc_pc,            
+  input [11:0] input_addr,
+  output reg [11:0] pc_out       
+);
+
+   
+    always @(posedge clk or posedge reset) begin
+        if (reset) begin
+            pc_out <= 12'h000;    
+        end 
+        else if (load_pc) begin
+            pc_out <= input_addr; 
+        end 
+        else if (inc_pc) begin
+            pc_out <= pc_out + 1;  
+        end
+       
+    end
+
+endmodule

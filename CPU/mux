@@ -1,0 +1,22 @@
+
+module mux (
+  input  [11:0] pc_address,     
+  input  [11:0] immediate_addr,  
+    input wire loadpc,                  
+  output wire [11:0] curr_addr       
+);
+
+  assign curr_addr = (loadpc == 1'b0) ? pc_address : immediate_addr;
+
+endmodule
+
+// module mux2 (
+//   input  [15:0] in0,    // instruction memory/address
+//     input  [15:0] in1,    //ALU result
+//     input         sel,    
+//   output [15:0] out );    
+    
+//     assign out = (sel == 1'b0) ? in0 : in1;
+
+// endmodule
+  

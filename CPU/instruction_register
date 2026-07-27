@@ -1,0 +1,27 @@
+module instruction_register (
+    input  clk,                
+    input  reset,              
+//     input  load_ir,            
+    input  [15:0] inst_in,     
+    output reg [3:0] opcode,       
+  output reg [11:0] address   
+);
+
+    reg [15:0] ir_data;
+
+    always @(posedge clk or posedge reset) begin
+        if (reset) 
+            ir_data <= 16'h0000;
+//      end 
+//         else if (load_ir) begin
+          else
+            ir_data <= inst_in;   
+        end
+  
+
+    always @(*) begin
+        opcode    = ir_data[15:12];
+        address = ir_data[11:0];
+    end
+
+endmodule
