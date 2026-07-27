@@ -1,0 +1,121 @@
+$date
+	Mon Jul 27 04:06:37 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_step2_load_counter $end
+$var wire 4 ! q [3:0] $end
+$var reg 1 " clk $end
+$var reg 1 # load $end
+$var reg 4 $ load_val [3:0] $end
+$var reg 1 % reset $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1%
+b0 $
+0#
+0"
+bx !
+$end
+#5
+b0 !
+1"
+#10
+0"
+0%
+#15
+b1 !
+1"
+#20
+0"
+#25
+b10 !
+1"
+#30
+0"
+b101 $
+#35
+b11 !
+1"
+#40
+0"
+1#
+#45
+b101 !
+1"
+#50
+0"
+#55
+1"
+#60
+0"
+0#
+#65
+b110 !
+1"
+#70
+0"
+#75
+b111 !
+1"
+#80
+0"
+#85
+b1000 !
+1"
+#90
+0"
+#95
+b1001 !
+1"
+#100
+0"
+#105
+b1010 !
+1"
+#110
+0"
+#115
+b1011 !
+1"
+#120
+0"
+#125
+b1100 !
+1"
+#130
+0"
+#135
+b1101 !
+1"
+#140
+0"
+#145
+b1110 !
+1"
+#150
+0"
+#155
+b1111 !
+1"
+#160
+0"
+#165
+b0 !
+1"
+#170
+0"
+#175
+b1 !
+1"
+#180
+0"
