@@ -1,0 +1,91 @@
+$date
+	Mon Jul 27 05:43:44 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var wire 2 ! current_floor [1:0] $end
+$var reg 1 " clk $end
+$var reg 2 # req_floor [1:0] $end
+$var reg 1 $ reset $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1$
+b0 #
+0"
+b0 !
+$end
+#5
+1"
+#10
+0"
+b1 #
+0$
+#15
+b1 !
+1"
+#20
+0"
+#25
+1"
+#30
+0"
+#35
+1"
+#40
+0"
+b0 #
+#45
+b0 !
+1"
+#50
+0"
+#55
+1"
+#60
+0"
+#65
+1"
+#70
+0"
+b11 #
+#75
+b1 !
+1"
+#80
+0"
+#85
+b10 !
+1"
+#90
+0"
+#95
+b11 !
+1"
+#100
+0"
+b0 #
+#105
+b10 !
+1"
+#110
+0"
+#115
+b1 !
+1"
+#120
+0"
+#125
+b0 !
+1"
+#130
+0"
