@@ -1,0 +1,25 @@
+$date
+	Mon Jul 27 06:45:05 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var wire 8 ! product [7:0] $end
+$var reg 4 " multiplicand [3:0] $end
+$var reg 4 # multiplier [3:0] $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b110 #
+b1010 "
+b111100 !
+$end
+#10
